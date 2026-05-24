@@ -1,0 +1,1 @@
+sed -i 's@^deb .*@deb https://mirror.nyist.edu.cn/termux/apt/termux-main stable main@g' $PREFIX/etc/apt/sources.list && apt update -y && apt upgrade -y && pkg install -y wget openssh tsu proot python nodejs vim curl hydra unstable-repo && pkg install -y metasploit
